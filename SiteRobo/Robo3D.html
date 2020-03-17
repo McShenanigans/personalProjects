@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang=ro>
+    <head>
+        <title>Robo3D</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="robotique.css">
+        <link rel="icon" href="pictures/pp.png">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="header"style="font-size: 30px;">Robo3D - propria noastră aplicație de Android</div>
+        <div class="texttab">
+            <p>
+                De aici puteți descărca aplicația nostră de Android. Procesul de instalare al acesteia nu este unul tradițional, în sensul că nu apare în Google Play Store, însă acest fapt nu trebuie să vă descurajeze, procesul fiind foarte asemănător cu instalarea unui program pe Windows.
+            </p>
+            <p>
+                Aplicația vă permite să observați modelul 3D al robotului pe care l-am construit pentru competiția de anul acesta, FIRST Relic Recovery, într-un mediu ce îmbină realitea virtuală cu lumea în care ne desfășurăm activitățile zilnice, care vă permite să vedeți robotul ca și cum acesta s-ar alfa chiar în fața ochilor dumneavoastră, anume în realitate augmentată. Pentru ca acest lucru să fie posibil, însă, este nevoie de un obiect din lumea reală pe care dispozitivul dumneavoastră să-l recunoască și peste care să afișeze modelul. Noi am ales ca acest obiect să fie imaaginea de la finalul acestui segment. Dacă deschideți aplicația și îndreptați camera dispozitivului înspre această imagine, veți vedea că peste ea va apărea chiar robotul. De aici puteți să apăsați pe butoanele de pe ecran ca să vedeți mecanismul de ridicare a obiectelor de concurs, reprezentate printr-un cub, sau să treceți la partea în care veți putea să manipulați modelul. Aplicația va recunoaște imaginea indiferent dacă aceasta se află pe un monitor sau dacă este printată pe ceva.
+            </p>
+            <p>
+                Robotul folosește un sistem de aspirare pentru a prinde obiectele, o cremalieră ca să le ridice și un braț extensibil care este folosit în partea cea mai importantă a unui meci: plasarea unui idol într-un anumit loc din afara terenului. Pentru a afla mai multe despre competiția din acest an, dați click <a href="https://www.youtube.com/watch?v=nRsu7bRFhx4&feature=youtu.be&mc_cid=ebedc10ae0&mc_eid=5db07fa5d9" style="text-decoration: none; color: darkorange;">aici</a>.
+            </p>
+            <div id="PozaVuforia">
+                <a href="pictures/Robo3DPicture.jpg"><div id="PicText">Descărcați poza</div></a>
+            </div>
+        </div>
+        <div class="newpar" style="background-position: 0px 100px;">Specificații minime</div>
+        <div class="texttab">
+            <ul>
+                <li>Sistem de operare: Android 6.0 sau mai nou</li>
+                <li>24MB de spațiu de stocare disponibil</li>
+            </ul>
+        </div>
+        <div class="newpar" style="background-position: 0px 200px;">Procesul de instalare</div>
+        <div class="texttab">
+            <ol type="1">
+                <li>Descărcați fișierul Robo3D.apk apăsând pe butonul din josul acestei pagini.</li>
+                <li>Dacă ați descărcat fișierul pe un computer, conectați-vă dispozitivul la acesta prin USB și mutați fișierul Robo3D.apk în folderul Downloads din memoria locală a dispozitivului mobil. Altfel, treceți la pasul următor.</li>
+                <li>Accesați folderul Downloads.</li>
+                <li>Găsiți și apăsați pe fișierul Robo3D.apk pentru a începe instalarea.</li>
+            </ol>
+        </div>
+        <div class="newpar" style="background-position: 0px 300px;">Precizări</div>
+        <div class="texttab">
+            <ul>
+                <li>
+                    Utilizarea aplicației pentru o perioadă lungă de timp va determina dispozitivul să atingă temperaturi ridicate, fapt ce poate să detelioreze sănătatea bateriei acestuia.
+                </li>
+                <li>
+                    Pentru cea mai bună performanță este recomandată, dar nu obligatorie, folosirea unui dispozitiv cel puțin la fel de performant ca un Samsung Galaxy S6.
+                </li>
+                <li>
+                    Aplicația poate fi instalată doar pe dispozitive ce rulează Android, nu și pe cele care rulează iOS (iPhone, iPad, iPod) sau Windows pentru mobil (Windows Phone).
+                </li>
+            </ul>
+        </div>
+        <button id="appbtn" data-toggle="modal" data-target="#Appmodal" class="Appbtn" style="margin-bottom: 30px;">Descarcă aplicația</button>
+<div class="modal fade" id="Appmodal" tabindex=-1 role=dialog aria-labelledby="modal App" aria-hidden=true>
+<div class=modal-dialog role=document>
+<div class=modal-content>
+<div class="modal-header ModalTopBar">
+<h4 class=modal-title id=exampleModalLabel>Înainte de asta<br></h4>
+<button type=button class=close data-dismiss=modal aria-label=Close>
+<span class=w-times aria-hidden=true>&times;</span>
+</button>
+</div>
+<div class=modal-body>
+    <ul>
+        <li>
+            Aplicația Robo3D nu reprezintă o metodă de profit. Distribuirea ei prin alte mijloace decât prin această pagină și încercarea de a face profit de pe urma acesteia sunt strict interzise și pedepsite ca atare.
+        </li>
+        <li>
+            Echipa RoboAS și Colegiul Național "Andrei Șaguna" nu sunt responsabili de eventualele daune provocate de utilizarea necomformă a aplicației Robo3D.
+        </li>
+    </ul>
+    <div class="Accept">
+        <a href="Robo3D.apk" style="border: 0px solid white; margin: auto;"><button class="Appbtn">Accept</button></a>
+        <button type=button class="Appbtn" data-dismiss=modal aria-label=Close>Nu accept</button>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/JavascriptBundle.js"></script>
+    </body>
+</html>

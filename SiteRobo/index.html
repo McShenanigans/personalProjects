@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang=ro>
+
+<head>
+    <title>RoboAS - a Saguna brand</title>
+    <meta charset=UTF-8>
+    <link rel=stylesheet href=robotique.css> <!-- legatura cu fila de css -->
+    <link rel=icon href="pictures/pp.png" sizes=192x192> <!-- asta seteaza iconita din tab-ul browserului -->
+    <meta name=viewport content="width=device-width, initial-scale=1"> <!-- asta e necesara pentru a face site-ul sa se adapteze la display-uri de telefon/tableta s.a.m.d. -->
+</head>
+
+<body>
+    <!-- aici incepe navbar-ul. Tot codul e luat din documentatia din bootstrap, asa ca de multe nu trebuie sa-ti faci griji-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded" id=header style="padding-bottom: 0px; padding-top: 0px;"> 
+        <a class=navbar-brand>A.S. Robotics</a>
+        <button class=navbar-toggler type=button data-toggle=collapse data-target="#navbarSupportedContent" aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation" style="margin-top: 5px; margin-bottom: 5px;">
+<span class=navbar-toggler-icon></span>
+</button>
+        <div class="collapse navbar-collapse" id=navbarSupportedContent>
+            <!-- aici sunt cele 5 butoane din navbar -->
+            <ul class="navbar-nav ml-auto" style="padding-bottom: 10px;">
+                <li class="nav-item active" id=VideobtnNav> 
+                    <a class=nav-link href="#Video" style="padding-right: 5px; padding-left: 0px;"><button class=hdbutton>Video de prezentare</button></a>
+                </li>
+                <li class="nav-item active">
+                    <a class=nav-link href="#Membrii" style="padding-right: 5px; padding-left: 0px;"><button class=hdbutton>Întâlnește echipa</button></a>
+                </li>
+                <li class=nav-item>
+                    <a class=nav-link href="#Sponsori" style="padding-right: 5px; padding-left: 0px;"><button class=hdbutton>Sponsori</button></a>
+                </li>
+                <li class=nav-item>
+                    <a class="nav-link disabled" href="#Realizari" style="padding-right: 5px; padding-left: 0px;"><button class=hdbutton>Realizări</button></a>
+                </li>
+                <li class=nav-item>
+                    <a class="nav-link disabled" style="padding-right: 5px; padding-left: 0px;"><button class=hdbutton data-toggle=modal data-target="#Galerymodal">Galerie</button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- sfarsit navbar -->
+    <!-- aici este partea cu pozele care trec de la una la alta. In bootstrap asa ceva se numeste carousel -->
+    <div class=row style="margin-right: 0px;margin-left: 0px;">
+        <div id=carouselExampleIndicators class="carousel slide" data-ride=carousel>
+            <div class=carousel-inner>
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="pictures/LogoRoboLungCuSponsori.jpg" alt="First slide"> <!-- poza 1 -->
+                </div>
+                <div class=carousel-item>
+                    <img class="d-block w-100" src="pictures/Cover2.jpg" alt="Second slide"> <!-- poza 2 -->
+                </div>
+                <div class=carousel-item>
+                    <img class="d-block w-100" src="pictures/cover3.png" alt="Third slide"> <!-- poza 3 -->
+                </div>
+            </div>
+            <!-- astea-s butoanele din carousel care te lasa sa navighezi printre poze -->
+            <!-- poza precedenta -->
+            <a class=carousel-control-prev href="#carouselExampleIndicators" role=button data-slide=prev>
+<span class=carousel-control-prev-icon aria-hidden=true></span>
+<span class=sr-only>Previous</span>
+</a>
+            <!-- poza urmatoare -->
+            <a class=carousel-control-next href="#carouselExampleIndicators" role=button data-slide=next>
+<span class=carousel-control-next-icon aria-hidden=true></span>
+<span class=sr-only>Next</span>
+</a>
+        </div>
+    </div>
+    
+    <!-- aici incep segemntele cu diferite chestii despre echipa -->
+    
+    <!-- prezentare generala -->
+    <div id=CineSuntemNoi class=newpar style="background-position: 0px 100px; margin-top: 0px;">Cine suntem noi</div>
+    <div class=texttab>
+        <p>
+            Hello! Noi suntem echipa de robotică a Colegiului Național “Andrei Șaguna”, Brașov și am participat în anul precedent la BRD FIRST Tech Challenge Romania, un concurs de robotică ce s-a desfășurat în martie 2017 la București, acest concurs fiind primul la nivel liceal în țara noastră. Pasiunea pentru robotică ne-a adus premiul I „Rockwell Collins” pentru originalitate și inovație.
+        </p>
+        <p>
+            Concursul constă în proiectarea și asamblarea unui robot care trebuie să funcționeze atât autonom, cât și controlat de membrii echipei. Sezonul trecut, printre task-uri s-au numărat colectarea a cât mai multor bile, aruncarea acestora într-un vortex, dar și ridicarea unei mingi uriașe. Sezonul acesta, asamblarea unui puzzle din cuburi dar și plasarea unei relicve în afara terenului de joc se numără printre țintele noastre. De asemenea, concursul presupune și formarea de alianțe, acesta reprezentând o șansă pentru noi de a cunoaște elevi de la liceele de top din țară.
+        </p>
+        <p>Dacă doriți să vedeți cum arată și cum funcționează robotul pe care l-am construit pentru competiția din acest an, puteți să descărcați aplicația noastră pentru dispozitivele mobile Android de <a href="Robo3D.html" style="text-decoration: none; color: darkorange;">aici</a>.</p>
+        <p>
+            Învățăm împreună noțiuni de programare, inginerie și proiectare și ne îmbunătățim constant abilitățile de lucru in echipă. Anul acesta, din necesitate de fonduri, am apelat la ajutorul sponsorilor, și astfel am realizat o prezentare a echipei, ce include descrierea noastră, scopul competiției și un buget detaliat. Din fericire am reușit să primim fondurile necesare pentru piesele folosite în construcție și pentru logistică. Pe această cale le mulțumim sponsorilor noștri Autoliv, Systech și Avantec.
+        </p>
+        <p>
+            Cercul de robotică este o oportunitate deosebită de a ne descoperi pasiunile, de a lucra în echipă și de a dobândi noi cunoștințe în materie de inginerie și informatică, munca noastră fiind răsplătită atât prin premiul obținut, cât și prin respectul celorlalte echipe. Așteptăm cu nerăbdare concursul din anul acesta! Robotica e tare!
+        </p>
+        <button id=Videobtn data-toggle=modal data-target="#VideoModal">Video de prezentare</button>
+    </div>
+    <div id=Video class=newpar style="background-position: 0px 1000px;">Video de prezentare</div>
+    <div style="text-align: center;">
+        <video id=promovideoM class=embed-responsive-item src=VideoRobotique.mp4 poster="pictures/PtrVideo.jpg" allowfullscreen controls></video>
+    </div>
+    <div id=Membrii class=newpar style="background-position: 0px 200px;">
+        
+        <!-- prezentarea membrilor echipei -->
+        <div>Membrii echipei</div>
+    </div>
+    <div id=membar>
+        <button id=Dorubtn class=membru data-toggle=modal data-target="#Dorumodal"> <!-- data-toggle zice browser-ului ce functionalitate din Bootstrap sa deschida. Un "modal" este acea fila care se deschide si iti acopera ecranul dupa ce dai click pe un ceva ce are ca data-toggle un modal. Data-target este partea din fila HTML in care se gasesc datele ce trebuie sa apara pe modal ( o sa o vezi pentru fiecare membru in josul filei asteia -->
+<div>Adrian Modrișan</div><br>
+<div><img src="portrete/Doru.jpeg"></div>
+</button>
+        <button id=Adibtn class=membru data-toggle=modal data-target="#Adimodal">
+<div>Adrian Cucoș</div><br>
+<div><img src="portrete/Adi.jpeg"></div>
+</button>
+        <button id=Vicbtn class=membru data-toggle=modal data-target="#Vicmodal">
+<div>Victor Gheorghe</div><br>
+<div><img src="portrete/Vic.jpeg"></div>
+</button>
+        <button id=Mihneabtn class=membru data-toggle=modal data-target="#Mihneamodal">
+<div>Mihnea Toader</div><br>
+<div><img src="portrete/Mihnea.jpeg"></div>
+</button>
+        <button id=Chitbtn class=membru data-toggle=modal data-target="#Chitmodal">
+<div>Andrei Chițu</div><br>
+<div><img src="portrete/Chit.jpeg"></div>
+</button>
+        <button id=Andradabtn class=membru data-toggle=modal data-target="#Andradamodal">
+<div>Andrada Marica</div><br>
+<div><img src="portrete/Andrada.jpeg"></div>
+</button>
+        <button id=Simibtn class=membru data-toggle=modal data-target="#Simimodal">
+<div>Vlad Simion</div><br>
+<div><img src="portrete/Smi.jpeg"></div>
+</button>
+        <button id=Sergiubtn class=membru data-toggle=modal data-target="#Sergiumodal">
+<div>Sergiu Blaj</div><br>
+<div><img src="portrete/Sergiu.jpeg"></div>
+</button>
+        <button id=Ppkbtn class=membru data-toggle=modal data-target="#Ppkmodal">
+<div>Andrei Popica</div><br>
+<div><img src="portrete/ppk.jpeg"></div>
+</button>
+        <button id=Sebibtn class=membru data-toggle=modal data-target="#Sebimodal">
+<div>Sebastian Pomârleanu</div><br>
+<div><img src="portrete/Sebi.jpeg"></div>
+</button>
+        <button id=Paulbtn class=membru data-toggle=modal data-target="#Paulmodal">
+<div>Paul Pintea</div><br>
+<div><img src="portrete/Paul.jpeg"></div>
+</button>
+        <button id=Mirciubtn class=membru data-toggle=modal data-target="#Mirciumodal">
+<div>Mircea Marilă</div><br>
+<div><img src="portrete/Mircea.jpeg"></div>
+</button>
+        <button id=THbtn class=membru data-toggle=modal data-target="#THmodal">
+<div>Andrei Balinth</div><br>
+<div><img src="portrete/TH.jpeg"></div>
+</button>
+        <button id=Dariusbtn class=membru data-toggle=modal data-target="#Dariusmodal">
+<div>Darius Ungureanu</div><br>
+<div><img src="portrete/Darius.jpg"></div>
+</button>
+        <button id=Vasilebtn class=membru data-toggle=modal data-target="#Vasilemodal">
+<div>Vasile Costân</div><br>
+<div><img src="portrete/NeaVasile.jpeg"></div>
+</button>
+    </div>
+    <!-- segmentul cu sponsori -->
+    <div id=Sponsori class=newpar style="background-position: 0px 300px;">Sponsori</div>
+    <div id=sponbar>
+        <div class=sponsor>
+            <div><a target=_blank href="https://www.autoliv.com/"><img src="pictures/autoliv.png"></a></div>
+        </div>
+        <div class=sponsor>
+            <div><a target=_blank href="http://systech-sibiu.ro/ro/"><img src="pictures/Systechmic.png"></a></div>
+        </div>
+        <div class=sponsor>
+            <div><a target=_blank href="http://www.avantec.ro/ast/index.html"><img src="pictures/sigla_ast_small.jpg"></a></div>
+        </div>
+    </div>
+    <!-- segmentul cu realizari -->
+    <div class=newpar id=Realizari style="background-position: 0px 400px;">Realizări</div>
+    <div class=texttab>
+        <ul>
+            <li>Ediția 2017 a Concursului BRD First Tech Challenge - Premiul I pentru Inovatie și Design "Rockwell Collins"</li>
+        </ul>
+    </div>
+    <!-- segmentul ala care e chiar jos de tot, cu datele de contact si toate cele -->
+    <div id=footer style="background-position: 0px 900px;">
+        <div><span id=Contact>Contact</span></div>
+        <div>E-mail: roboas@saguna.ro</div>
+        <div>Adresa: Sirul Andrei Saguna, nr.1</div>
+        <a target=_blank href="https://www.facebook.com/cerculroboas/"><button class=FBbutton>Vizitați-ne pagina de Facebook</button></a>
+    </div>
+    <a href="#header"><button id=myBtn title="Go to top"><img src="pictures/IconTop.png"></button></a> <!-- butonul care te duce in cea mai de sus parte a paginii este pe linia asta -->
+    
+    <!-- aici este un exemplu de cum arata codul cand vrei sa intre intr-un modal. Explicatii mai detaliate vei gasi in documentatia de Bootstrap -->
+    <div>
+        <div class="modal fade" id=THmodal tabindex=-1 role=dialog aria-labelledby="modal TH" aria-hidden=true>
+            <div class=modal-dialog role=document>
+                <div class=modal-content>
+                    <div class="modal-header ModalTopBar">
+                        <h4 class=modal-title id=exampleModalLabel>Andrei Balinth<br></h4>
+                        <button type=button class=close data-dismiss=modal aria-label=Close>
+<span class=w-times aria-hidden=true>&times;</span>
+</button>
+                    </div>
+                    <div class=modal-body>
+                        <img class="rounded-circle img-responsive" src="portrete/TH.jpeg">
+                        <p>Clasă: a XII-a B</p>
+                        <p>Varstă: 19 ani</p>
+                        <p>Salutări! Sunt Andrei Balinth, elev al Colegiului Național "Andrei Șaguna". M-am înscris în competiția BRD First Tech Challenge pentru că m-a intrigat idea construirii unui robot, eu fiind pasionat de tot ceea ce însemnă tehnologie. Îmi place în mod deosebit să lucrez pe partea de software, însă nu fac parte din departamentul de programare, ci din cel de Media și Marketing. Astfel, am un rol important prin poziția mea, cum ar fi designul materialelor promoțonale. De asemenea, mi-am propus să lucrez la două proiecte individuale. Unul dintre ele este acest site, iar celălalt constă într-o aplicație de realitate augmentată pentru dispozitivele mobile Android, care ne va permite să prezentăm robotul fără să îl ținem la stand. În timpul pe care l-am petrecut aici mi-am îmbunătățit aptitudinile de programare și am învățat să creez modele 3D, să le animez și să lucrez mai eficient în programe de editare foto. Printre hobbyurile mele se mai numără jocurile video, cărțile bune și muzica.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- aici se termina exemplul de date pentru modal. Este cam acelasi lucru pentru fiecare membru -->
+        <div class="modal fade" id=Adimodal tabindex=-1 role=dialog aria-labelledby="modal Adi" aria-hidden=true>
+            <div class=modal-dialog role=document>
+                <div class=modal-content>
+                    <div class="modal-header ModalTopBar">
+                        <h4 class=modal-title id=exampleModalLabel>Adrian Cucoș <br></h4>
+                        <button type=button class=close data-dismiss=modal aria-label=Close>
+<span class=w-times aria-hidden=true>&times;</span>
+</button>
+                    </div>
+                    <div class=modal-body>
+                        <img class="rounded-circle img-responsive" src="portrete/Adi.jpeg">
+                        <div class="">
+                            <p>Clasă: a XII-a B</p>
+                            <p>Vârstă: 18 ani</p>
+                            <p>Salut! Sunt Adrian Cucoș, elev al Colegiului Național "Andrei Șaguna". M-am înscris la BRD First Tech Challenge datorită pasiunii mele pentru roboți, pentru programare și tot ceea cea înseamnă tehnologie. M-am ocupat de programarea multiplelor opmode-uri ale robotului. Ca fapt divers, primul opmode rulat pe robot a fost făcut de mine, eu fiind, astfel, responsabil de "primul pas" pe care l-a făcut robotul. Pe lângă tehnologie, printre pasiunile mele se mai numără jocurile video, cărțile bune si muzica.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id=Vicmodal tabindex=-1 role=dialog aria-labelledby="modal Vic" aria-hidden=true>
+            <div class=modal-dialog role=document>
+                <div class=modal-content>
+                    <div class=modal-header>
+                        <h4 class=modal-title id=exampleModalLabel>Victor Gheorghe <br></h4>
+                        <button type=button class=close data-dismiss=modal aria-label=Close>
+<span class=w-times aria-hidden=true>&times;</span>
+</button>
+                    </div>
+                    <div class=modal-body>
+                        <img class="rounded-circle img-responsive" src="portrete/Vic.jpeg">
+                        <div class="">
+                            <p>Clasă: a XII-a B</p>
+                            <p>Vârstă: 18 ani</p>
+                            <p>Salutări, prieteni! Sunt Victor, un elev al Colegiului Național "Andrei Șaguna". M-am bucurat nespus de mult când am aflat că am ocazia de a participa la BRD First Tech Challenge și aștept cu nerăbdare de fiecare data startul competiției, mai ales ca sunt si unul dintre driverii echipei. Evident, sunt pasionat de robotică și programare. Nu o să uit niciodată când am văzut prima oară kitul de asamblare, care mi-a deschis calea ingineriei. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id=Mihneamodal tabindex=-1 role=dialog aria-labelledby="modal Mihnea" aria-hidden=true>
+            <div class=modal-dialog role=document>
+                <div class=modal-content>
+                    <div class=modal-header>
+                        <h4 class=modal-title id=exampleModalLabel>Mihnea Toader <br></h4>
+                        <button type=button class=close data-dismiss=modal aria-label=Close>
+<span class=w-times aria-hidden=true>&times;</span>
+</button>
+                    </div>
+                    <div class=modal-body>
+                        <img class="rounded-circle img-responsive" src="portrete/Mihnea.jpeg">
+                        <div class="">
+                            <p>Clasă: a X-a B</p>
+                            <p>Vârstă: 16 ani</p>
+                            <p>Salut! Sunt Mihnea, cel mai tânăr membru al echipei. Mă ocup de programarea robotului, fapt de care nu mă pot plânge. Printre pasiunile mele se numără gamingul, programarea și proiectarea. Competiția BRD First Tech Challenge m-a motivat să îmi îmbunătățesc aptitudinile de IT-ist. Să vezi cum un robot ia naștere în fața ochilor tăi este extrem de emoționant, cu atât mai mult când ai ajutat la construcția acestuia. Abia aștept să văd cum se comportă robotul nostru în cadrul competiției.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id=Andradamodal tabindex=-1 role=dialog aria-labelledby="modal Andrada" aria-hidden=true>
+            <div class=modal-dialog role=document>
+                <div class=modal-content>
+                    <div class=modal-header>
+                        <h4 class=modal-title id=exampleModalLabel>Andrada Marica<br></h4>
+                        <button type=button class=close data-dismiss=modal aria-label=Close>
+<span class=w-times aria-hidden=true>&times;</span>
+</button>
+                    </div>
+                    <div class=modal-body>
+                        <img class="rounded-circle img-responsive" src="portrete/Andrada.jpeg">
+                        <p>Clasă: a XII-a B</p>
+                        <p>Vârstă: 18 ani</p>
+                        <p>Bună! Sunt Andrada, elevă la Colegiului Național "Andrei Șaguna" din Brașov. Mă pasionează știința în general, așa că ideea de a construi un robot m-a captivat într-o secundă. Sunt o persoană foarte determinată și organizată, caracteristici care cred că sunt foarte importante pentru echipă. Fac parte din departamentul de media și marketing, de care mă ocup cu plăcere. Călătoria noastră nu a fost lipsită de greutăți, dar cred că robotul a ieșit nemaipomenit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id=Ppkmodal tabindex=-1 role=dialog aria-labelledby="modal Ppk" aria-hidden=true>
+            <div class=modal-dialog role=document>
+                <div class=modal-content>
+                    <div class=modal-header>
+                        <h4 class=modal-title id=exampleModalLabel>Andrei Popica <br></h4>
+                        <button type=button class=close data-dismiss=modal aria-label=Close>
+<span class=w-times aria-hidden=true>&times;</span>
+</button>
+                    </div>
+                    <div class=modal-body>
+                        <img class="rounded-circle img-responsive" src="portrete/ppk.jpeg">
+                        <div class="">
+                            <p>Clasă: a XII-a A</p>
+                            <p>Vârstă: 18 ani</p>
+                            <p>Salut! Sunt Andrei Popica, elev al Colegiului Național "Andrei Șaguna". Am fost foarte încântat când am auzit că liceul nostru va avea o echipă pentru competiția BRD First Tech Challenge și mi-am dorit să fac parte din aceasta. Îmi place să practic sporturi, să călătoresc, matematica, informatica, economia și să învăț limbi străine. Fac parte din echipa de Media și Marketing, dar am participat și la asamblarea robotului. Cred că cel mai mare beneficiu al acestei echipe este relația strânsă dintre membrii acesteia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id=Sebimodal tabindex=-1 role=dialog aria-labelledby="modal Sebi" aria-hidden=true>
+            <div class=modal-dialog role=document>
+                <div class=modal-content>
+                    <div class=modal-header>
+                        <h4 class=modal-title id=exampleModalLabel>Sebastian Pomârleanu <br></h4>
+                        <button type=button class=close data-dismiss=modal aria-label=Close>
+<span class=w-times aria-hidden=true>&times;</span>
+</button>
+                    </div>
+                    <div class=modal-body>
+                        <img class="rounded-circle img-responsive" src="portrete/Sebi.jpeg">
+                        <div class="">
+                            <p>Clasă: a XII-a B</p>
+                            <p>Vârstă: 18 ani</p>
+                            <p>Salut! Sunt Sebi. Rolul meu este acela de programator. Îmi plac jocurile de logică, informatica, matematica, parkourul, animeurile și să mă gândesc despre diverse lucruri. M-am înscris în competiția BRD First Tech Challenge pentru că mi se pare interesantă și pentru că este ceva nou în România. Idea de a construi un robot de la 0 mi-a stârnit interesul. Am început cu foarte puține cunoștințe despre programarea în Java, dar m-am perfecționat pe parcurs împreună cu ceilalți colegi ai mei în timp ce încercam să programăm toate lucrurile.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id=Paulmodal tabindex=-1 role=dialog aria-labelledby="modal Paul" aria-hidden=true>
+            <div class=modal-dialog role=document>
+                <div class=modal-content>
+                    <div class=modal-header>
+                        <h4 class=modal-title id=exampleModalLabel>Paul Pintea <br></h4>
+                        <button type=button class=close data-dismiss=modal aria-label=Close>
+<span class=w-times aria-hidden=true>&times;</span>
+</button>
+                    </div>
+                    <div class=modal-body>
+                        <img class="rounded-circle img-responsive" src="portrete/Paul.jpeg">
+                        <div class="">
+                            <p>Clasă: a XII-a B</p>
+                            <p>Vârstă: 18 ani</p>
+                            <p>Sunt Paul Pintea, elev la Colegiul Național "Andrei Șaguna". Pasiunile mele sunt numeroase, printre ele aflându-se gamingul și datul pe longboard. Sunt un tip amuzant, dornic să învăț lucruri noi și am, în general, o atitudine pozitivă. Îmi place să înșurubez și să construiesc din nimic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id=Simimodal tabindex=-1 role=dialog aria-labelledby="modal Simi" aria-hidden=true>
+            <div class=modal-dialog role=document>
+                <div class=modal-content>
+                    <div class=modal-header>
+                        <h4 class=modal-title id=exampleModalLabel>Vlad Simion <br></h4>
+                        <button type=button class=close data-dismiss=modal aria-label=Close>
+<span class=w-times aria-hidden=true>&times;</span>
+</button>
+                    </div>
+                    <div class=modal-body>
+                        <img class="rounded-circle img-responsive" src="portrete/Smi.jpeg">
+                        <div class="">
+                            <p>Clasă: a XII-a A</p>
+                            <p>Vârstă: 18 ani</p>
+                            <p>Sunt Vlad Simion, numit și Airborn de către prieteni, poreclă pe care mi-am dat-o singur în glumă și care a prins. Sunt pasionat de tehnologie, de gaming, de software 3D - modelare, animație, printare - mai ales si de LEGO. Interesul meu pentru software 3D este principalul motiv pentru care m-am înscris la BRD First Tech Challenge, aceasta fiind o oportunitate de a-mi dezvolta aptitudinile în domeniu, dovadă că sunt la a doua participare.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id=Mirciumodal tabindex=-1 role=dialog aria-labelledby="modal Mirciu" aria-hidden=true>
+            <div class=modal-dialog role=document>
+                <div class=modal-content>
+                    <div class=modal-header>
+                        <h4 class=modal-title id=exampleModalLabel>Mircea Marilă <br></h4>
+                        <button type=button class=close data-dismiss=modal aria-label=Close>
+<span class=w-times aria-hidden=true>&times;</span>
+</button>
+                    </div>
+                    <div class=modal-body>
+                        <img class="rounded-circle img-responsive" src="portrete/Mircea.jpeg">
+                        <div class="">
+                            <p>Clasă: a XII-a B</p>
+                            <p>Vârstă: 18 ani</p>
+                            <p>Salut! Sunt Mircea Mărilă, elev la Colegiul Național "Andrei Șaguna". Printre pasiunile mele se numără gamingul, cântatul la chitară și programarea, eu dorindu-mi să devin un programator excepțional. Sporturile mele preferate sunt fotbalul, voleiul și ciclismul. Ascult orice e legat de rap și rock, trupele mele preferate fiind AC/DC, Linking Park, Green Day, Metallica și Guns N' Roses. Altfel, ador provocările și de aceea am ales să particip la ansamblarea unui robot performant, cum o să fie al nostru.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id=Chitmodal tabindex=-1 role=dialog aria-labelledby="modal Chit" aria-hidden=true>
+            <div class=modal-dialog role=document>
+                <div class=modal-content>
+                    <div class=modal-header>
+                        <h4 class=modal-title id=exampleModalLabel>Andrei Chițu<br></h4>
+                        <button type=button class=close data-dismiss=modal aria-label=Close>
+<span class=w-times aria-hidden=true>&times;</span>
+</button>
+                    </div>
+                    <div class=modal-body>
+                        <img class="rounded-circle img-responsive" src="portrete/Chit.jpeg">
+                        <div class="">
+                            <p>Clasă: a XII-a B</p>
+                            <p>Vârstă: 18 ani</p>
+                            <p>Salut! Sunt Andrei Chițu, de la Colegiului Național "Andrei Șaguna" din Brașov. Mă consider un tip sociabil, care este mereu înconjurat de prieteni. Îmi plac foarte mult sporturile, în special skiul, fotbalul și hiking-ul. Genul meu preferat de muzică este rockul, în special cel alternativ de la trupe precum Linking Park, Green Day, Serj Tankian, Cargo și Metallica. O pasiune de-a mea este gătitul, specialitatea mea fiind grătarul. Îmi face plăcere să-mi petrec timpul cu prietenii și să fac glume in timp ce înșurubez câte ceva.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id=Sergiumodal tabindex=-1 role=dialog aria-labelledby="modal Sergiu" aria-hidden=true>
+            <div class=modal-dialog role=document>
+                <div class=modal-content>
+                    <div class=modal-header>
+                        <h4 class=modal-title id=exampleModalLabel>Sergiu-Andrei Blaj <br></h4>
+                        <button type=button class=close data-dismiss=modal aria-label=Close>
+<span class=w-times aria-hidden=true>&times;</span>
+</button>
+                    </div>
+                    <div class=modal-body>
+                        <img class="rounded-circle img-responsive" src="portrete/Sergiu.jpeg">
+                        <div class="">
+                            <p>Clasă: a XII-a B</p>
+                            <p>Vârstă: 18 ani</p>
+                            <p>Salut! Sunt Sergiu-Andrei, de la Colegiul Național "Andrei Șaguna" din Brașov. Fac parte din departamentul de Media și Marketing al echipei, lucru care-mi face o mare plăcere. Domeniile ce mă interesează sunt matematica, economia și literatura. Mă consider o persoană creativă și îmi place să analizez probleme sociale. Una din pasiunile mele este să scriu versuri, un vis de-al meu fiind să devin rapper. De asemenea, fotbalul este unul din hobby-urile mele, jucând cel puțin un meci pe săptămână cu prietenii mei. Dorința mea este ca pe viitor să văd un meci de fotbal între roboți.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id=Galerymodal tabindex=-1 role=dialog aria-labelledby="modal Galerie" aria-hidden=true>
+            <div class="modal-dialog modal-lg" role=document>
+                <div class=modal-content>
+                    <div class=modal-header>
+                        <h4 class=modal-title id=exampleModalLabel>Galerie</h4>
+                        <button type=button class=close data-dismiss=modal aria-label=Close>
+<span class=w-times aria-hidden=true>&times;</span>
+</button>
+                    </div>
+                    <div class=modal-body>
+                        <div class=row style="margin-right: 0px;margin-left: 0px;">
+                            <div id=carouselExampleIndicators1 class="carousel slide" data-ride=carousel>
+                                <div class=carousel-inner>
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="tpics/certificat.jpg" alt="First slide">
+                                    </div>
+                                    <div class=carousel-item>
+                                        <img class="d-block w-100" src="tpics/mem1.jpg" alt="Second slide">
+                                    </div>
+                                    <div class=carousel-item>
+                                        <img class="d-block w-100" src="tpics/mem2.jpg" alt="Third slide">
+                                    </div>
+                                    <div class=carousel-item>
+                                        <img class="d-block w-100" src="tpics/mem3.jpg" alt="Forth slide">
+                                    </div>
+                                    <div class=carousel-item>
+                                        <img class="d-block w-100" src="tpics/mem5.jpg" alt="Fifth slide">
+                                    </div>
+                                    <div class=carousel-item>
+                                        <img class="d-block w-100" src="tpics/mem6.jpg" alt="Sixth slide">
+                                    </div>
+                                    <div class=carousel-item>
+                                        <img class="d-block w-100" src="tpics/pp.jpg" alt="Seventh slide">
+                                    </div>
+                                    <div class=carousel-item>
+                                        <img class="d-block w-100" src="tpics/premiu.jpg" alt="Eighth slide">
+                                    </div>
+                                    <div class=carousel-item>
+                                        <img class="d-block w-100" src="tpics/robo1.jpg" alt="Ninth slide">
+                                    </div>
+                                </div>
+                                <a class=carousel-control-prev href="#carouselExampleIndicators1" role=button data-slide=prev>
+<span class=carousel-control-prev-icon aria-hidden=true></span>
+<span class=sr-only>Previous</span>
+</a>
+                                <a class=carousel-control-next href="#carouselExampleIndicators1" role=button data-slide=next>
+<span class=carousel-control-next-icon aria-hidden=true></span>
+<span class=sr-only>Next</span>
+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id=Dariusmodal tabindex=-1 role=dialog aria-labelledby="modal Darius" aria-hidden=true>
+            <div class=modal-dialog role=document>
+                <div class=modal-content>
+                    <div class="modal-header ModalTopBar">
+                        <h4 class=modal-title id=exampleModalLabel>Darius Ungureanu <br></h4>
+                        <button type=button class=close data-dismiss=modal aria-label=Close>
+<span class=w-times aria-hidden=true>&times;</span>
+</button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="rounded-circle img-responsive" src="portrete/Darius.jpg">
+                        <p>Clasă: a X-a B</p>
+                        <p>Vârstă: 16 ani</p>
+                        <p>Salut! Sunt Darius Ungureanu, am 16 ani și studiez la Colegiul Național "Andrei Șaguna". Am intrat în echipă sub aripa lui Airborn, fapt pentru care mă bucur foarte mult. Sunt un tip optimist căruia îi place să lucreze în echipă și să încuraje pe toată lumea. Chiar și așa, sunt nou în echipă și încerc să-mi găsesc locul, să văd pe ce vreau să avansez. Îmi place mult fizica și mi-ar plăcea să contribui la construirea robotului, dar momentan am o grămadă de învățat de la coechipierii mei, așa că incerc să fiu răbdător.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id=Dorumodal tabindex=-1 role=dialog aria-labelledby="modal Doru" aria-hidden=true>
+            <div class=modal-dialog role=document>
+                <div class=modal-content>
+                    <div class="modal-header ModalTopBar">
+                        <h4 class=modal-title id=exampleModalLabel>Adrian Modrișan <br></h4>
+                        <button type=button class=close data-dismiss=modal aria-label=Close>
+<span class=w-times aria-hidden=true>&times;</span>
+</button>
+                    </div>
+                    <div class=modal-body>
+                        <img class="rounded-circle img-responsive" src="portrete/Doru.jpeg">
+                        <p>
+                            Mă bucur foarte mult de faptul că am avut oportunitatea să organizăm în școala noastră un cerc de robotică. Mulțumită "Natie prin Educație ", am primit un set complet de robotică și am putut să aranjăm o sală de lucru în școla noastră, dotată cu multe instrumente și materiale. Cercul de robotică a început cu o mulțime de elevi - mai mult de 50 - cei mai mulți dintre ei de la profilele de matematică-informatică din școala noastră. În primul rând, înainte de primirea kitului de robotică, în timpul întâlnirilor cu elevii, acestia au început să învețe cum să creeze obiecte 3D în Creo și elementele de bază ale programării în Java. După primirea kitului de robotică, munca grea a început pentru elevi: designul și construirea robotului. Odată cu trecerea timpului, mulți dintre ei au plecat din echipă. La sfârșitul lunii ianuarie mai erau aproximativ 20 de membri implicați, iar la mijlocul lunii februarie, a trebuit să alegem ultimii 12 componenți ai echipei. A fost o decizie destul de dificilă, alegerea finală făcându-se prin vot. Lucrul greu a început imediat după aceea. Cei 12 membri ai echipei au făcut o treabă excelentă, au studiat ore în șir, au făcut unele încercări de a construi robotul, după care și-au dat seama că sunt pe un drum greșit. Au demontat totul și apoi l-au reconstruit într-un alt mod. Trebuie să recunosc asta. Am fost implicat în alte proiecte și nu am putut oferi echipei tot sprijinul pe care aș fi dorit să-l ofer. Au făcut o mulțime de activități de auto-învățare și au avut o coeziune impresionantă.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id=VideoModal tabindex=-1 role=dialog aria-labelledby="modal video" aria-hidden=true>
+            <div class=modal-dialog role=document>
+                <div class=modal-content>
+                    <div class="modal-header ModalTopBar">
+                        <h4 class=modal-title id=exampleModalLabel>Video de prezentare</h4>
+                        <button type=button class=close data-dismiss=modal aria-label=Close>
+<span class=w-times aria-hidden=true>&times;</span>
+</button>
+                    </div>
+                    <div class=modal-body>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <video id=promovideo class=embed-responsive-item src=VideoRobotique.mp4 poster="pictures/PtrVideo.jpg" allowfullscreen controls></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id=Vasilemodal tabindex=-1 role=dialog aria-labelledby="modal Vasile" aria-hidden=true>
+        <div class=modal-dialog role=document>
+            <div class=modal-content>
+                <div class=modal-header>
+                    <h4 class=modal-title id=exampleModalLabel>Vasile Costân<br></h4>
+                    <button type=button class=close data-dismiss=modal aria-label=Close>
+<span class=w-times aria-hidden=true>&times;</span>
+</button>
+                </div>
+                <div class=modal-body>
+                    <img class="rounded-circle img-responsive" src="portrete/NeaVasile.jpeg">
+                    <div class="">
+                        <p>Domnul Vasile Costân, deși nu face în mod oficial parte din echipă, a avut o contributie majoră în confecționarea pieselor pentru robot. De-a lungul procesului de asamblare ne-am găsit adesea în nevoie de cadre de lungimi nonstandard și cu găuri în locații neconvenționale. Dumnealui a fost cel care a tăiat și a dat găurile necesare, cu o precizie incredibilă am putea adăuga, în cea mai mare parte din cadrele de aluminiu pe care le-am achiziționat.</p>
+                        <p style="font-size: 25px; color: darkorange; text-align: center;">Pentru ajutor necondiționat, pentru munca excepțională pe care a depus-o cu drag, îi mulțumim din adâncul inimilor noastre.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- astea sunt scripturi de javascript, se ocupa cu animatii pentru bootstrap si alte lucruri. Sunt obligatorii daca vrei sa folosesti bootstrap -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/JavascriptBundle.js"></script>
+    <!-- asta e scriptul care se ocupa cu scrolling-ul cand dai click pe unul din butoanele din header. L-am gasit pe google asa ca nu ma intreba ce inseamna ceva de aici :)))))) -->
+    <script>
+        $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000, function() {
+                        var $target = $(target);
+                        $target.focus();
+                        if ($target.is(":focus")) {
+                            return !1
+                        } else {
+                            $target.attr('tabindex', '-1');
+                            $target.focus()
+                        }
+                    })
+                }
+            }
+        });
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block"
+            } else {
+                document.getElementById("myBtn").style.display = "none"
+            }
+        }
+        $('#VideoModal').on('hide.bs.modal', function(e) {
+            var $if = $(e.delegateTarget).find('video');
+            var src = $if.attr("src");
+            $if.attr("src", '/empty.html');
+            $if.attr("src", src);
+        });
+    </script>
+</body>
+
+</html>

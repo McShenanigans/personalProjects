@@ -1,0 +1,2 @@
+To see the app in action point your device to the first image of this pdf:
+https://developer.vuforia.com/sites/default/files/sample-apps/targets/imagetargets_targets.pdf
